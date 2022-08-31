@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom right,#261FAE, #4D1FAE);
+    height: 100vh;
+    width: 100vw;
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    top: 0;
+    left: 0;
+    font-size: 80px;
+    font-family: Roboto Condensed;
+    color: white
+}
+
+.mainBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 70vh;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+.flagContinent {
+    position: absolute;
+    width: 25%;
+    left: 0;
+    bottom: 0;
+    margin: 1%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.flagContinent:hover {
+    margin-bottom: 2%
+}
+
+.middleGameBox {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 25%;
+    aspect-ratio : 1 / 1;
+    background-color: #B9B9B9;
+    border-radius: 10px;
+    transform: translate(-50%);
+    margin-bottom: 5%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.middleGameBox:hover {
+    margin-bottom: 6%
+}
+
+.flagGlobal {
+    position: absolute;
+    width: 25%;
+    right: 0;
+    bottom: 0;
+    margin: 1%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.flagGlobal:hover {
+    margin-bottom: 2%
+}
+
+
+
