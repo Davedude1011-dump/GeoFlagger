@@ -37,6 +37,12 @@ body {
     width: 15%;
     aspect-ratio : 1 / 1;
 }
+@media screen and (orientation: portrait) {
+    .loadingBoxOut {
+        width: 50%;
+        aspect-ratio: 1/1;
+    }
+}
 
 .flag1 {
     position: absolute;
