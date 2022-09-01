@@ -61,7 +61,7 @@ function randWrong3() {
 }
 
 function imageChange(){
-    document.querySelector(".flag").style.backgroundImage = `url("${continentName[imageSRC-2]}")`
+    document.querySelector(".flag").style.backgroundImage = `url("${continentName[imageSRC]}")`
     document.querySelector(`.button${buttonNum}Text`).textContent = continentName[imageSRC+1]
     console.log(continentName[imageSRC+1])
 }
@@ -79,6 +79,12 @@ function button1Check() {
     var button1Txt = document.querySelector(".button1Text").textContent
     if (button1Txt === continentName[imageSRC+1]) {
         score += 1
+        document.querySelector(".audioCorrect").play()
+        document.querySelector(".audioCorrect").currentTime = 0;
+    }
+    else {
+        document.querySelector(".audioWrong").play()
+        document.querySelector(".audioWrong").currentTime = 0;
     }
     gameStart()
 }
@@ -86,6 +92,12 @@ function button2Check() {
     var button2Txt = document.querySelector(".button2Text").textContent
     if (button2Txt === continentName[imageSRC+1]) {
         score += 1
+        document.querySelector(".audioCorrect").play()
+        document.querySelector(".audioCorrect").currentTime = 0;
+    }
+    else {
+        document.querySelector(".audioWrong").play()
+        document.querySelector(".audioWrong").currentTime = 0;
     }
     gameStart()
 }
@@ -93,6 +105,12 @@ function button3Check() {
     var button3Txt = document.querySelector(".button3Text").textContent
     if (button3Txt === continentName[imageSRC+1]) {
         score += 1
+        document.querySelector(".audioCorrect").play()
+        document.querySelector(".audioCorrect").currentTime = 0;
+    }
+    else {
+        document.querySelector(".audioWrong").play()
+        document.querySelector(".audioWrong").currentTime = 0;
     }
     gameStart()
 }
@@ -100,6 +118,12 @@ function button4Check() {
     var button4Txt = document.querySelector(".button4Text").textContent
     if (button4Txt === continentName[imageSRC+1]) {
         score += 1
+        document.querySelector(".audioCorrect").play()
+        document.querySelector(".audioCorrect").currentTime = 0;
+    }
+    else {
+        document.querySelector(".audioWrong").play()
+        document.querySelector(".audioWrong").currentTime = 0;
     }
     gameStart()
 }
