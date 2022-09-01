@@ -18,12 +18,42 @@ body {
 
 .title {
     position: absolute;
-    font-size: 80px;
+    height: 60%;
+    width: 20%;
+    margin-left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0077d8;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.titleText {
+    position: absolute;
+    font-size: 40px;
+    height: fit-content;
+    width: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    cursor: pointer;
+    text-align: center;
+}
+.title:hover {
+    background-color: #0069bf;
+}
+.scoreTracker {
+    position: absolute;
     height: fit-content;
     width: 100%;
-    top: 50%;
-    transform: translatey(-50%);
     text-align: center;
+    font-size: 70px;
+    top: 50%;
+    transform: translateY(-50%);
     color: white;
     font-weight: bold;
     font-family: Roboto;
@@ -32,7 +62,7 @@ body {
     position: absolute;
     font-size: 40px;
     height: fit-content;
-    width: fit-content;
+    width: 25%;
     right: 0;
     margin-right: 5%;
     top: 50%;
@@ -54,8 +84,8 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 25%;
-    height: 40%;
+    height: 60%;
+    aspect-ratio: 4/3;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -128,4 +158,16 @@ body {
     text-align: center;
     font-weight: bold;
     font-family: Roboto;
+}
+
+@media screen and (orientation: portrait) {
+    .subTitle, .titleText {
+        font-size: 20px;
+    }
+    .buttonBox {
+        width: 90%;
+    }
+    .buttonText {
+        font-size: 25px;
+    }
 }
