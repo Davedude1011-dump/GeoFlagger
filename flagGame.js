@@ -6,6 +6,7 @@ var wrong3 = ""
 var wrongButtonPos = []
 var buttonNum = ""
 var score = 0
+var totalGames = 0
 
 function applyContinentName() {
     document.querySelector(".continentName").textContent = continentName[50];
@@ -67,7 +68,8 @@ function imageChange(){
 }
 
 function gameStart() {
-    document.querySelector(".scoreTracker").textContent = score
+    document.querySelector(".score").textContent = score
+    document.querySelector(".totalGoes").textContent = totalGames
     rightAnswerButton()
     randNumEven()
     randWrong1()
@@ -79,10 +81,12 @@ function button1Check() {
     var button1Txt = document.querySelector(".button1Text").textContent
     if (button1Txt === continentName[imageSRC+1]) {
         score += 1
+        totalGames += 1
         document.querySelector(".audioCorrect").play()
         document.querySelector(".audioCorrect").currentTime = 0;
     }
     else {
+        totalGames += 1
         document.querySelector(".audioWrong").play()
         document.querySelector(".audioWrong").currentTime = 0;
     }
@@ -92,10 +96,12 @@ function button2Check() {
     var button2Txt = document.querySelector(".button2Text").textContent
     if (button2Txt === continentName[imageSRC+1]) {
         score += 1
+        totalGames += 1
         document.querySelector(".audioCorrect").play()
         document.querySelector(".audioCorrect").currentTime = 0;
     }
     else {
+        totalGames += 1
         document.querySelector(".audioWrong").play()
         document.querySelector(".audioWrong").currentTime = 0;
     }
@@ -105,10 +111,12 @@ function button3Check() {
     var button3Txt = document.querySelector(".button3Text").textContent
     if (button3Txt === continentName[imageSRC+1]) {
         score += 1
+        totalGames += 1
         document.querySelector(".audioCorrect").play()
         document.querySelector(".audioCorrect").currentTime = 0;
     }
     else {
+        totalGames += 1
         document.querySelector(".audioWrong").play()
         document.querySelector(".audioWrong").currentTime = 0;
     }
@@ -118,10 +126,12 @@ function button4Check() {
     var button4Txt = document.querySelector(".button4Text").textContent
     if (button4Txt === continentName[imageSRC+1]) {
         score += 1
+        totalGames += 1
         document.querySelector(".audioCorrect").play()
         document.querySelector(".audioCorrect").currentTime = 0;
     }
     else {
+        totalGames += 1
         document.querySelector(".audioWrong").play()
         document.querySelector(".audioWrong").currentTime = 0;
     }
