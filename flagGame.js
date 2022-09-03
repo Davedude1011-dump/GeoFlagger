@@ -9,7 +9,7 @@ var score = 0
 var totalGames = 0
 
 function applyContinentName() {
-    document.querySelector(".continentName").textContent = continentName[50];
+    document.querySelector(".continentName").textContent = continentName[continentLength-1];
 }
 
 function rightAnswerButton() {
@@ -24,7 +24,7 @@ function rightAnswerButton() {
 }
 
 function randNumEven() {
-    imageSRC = Math.floor(Math.random() * 49) + 1
+    imageSRC = Math.floor(Math.random() * (continentLength-2)) + 1
     if (imageSRC % 2 === 0) {
         imageChange()
     }
@@ -34,7 +34,7 @@ function randNumEven() {
 }
 
 function randWrong1() {
-    wrong1 = Math.floor(Math.random() * 49) + 1
+    wrong1 = Math.floor(Math.random() * (continentLength-2)) + 1
     if (wrong1 % 2 != 0) {
         document.querySelector(`.button${wrongButtonPos[0]}Text`).textContent = continentName[wrong1]
     }
@@ -43,7 +43,7 @@ function randWrong1() {
     }
 }
 function randWrong2() {
-    wrong2 = Math.floor(Math.random() * 49) + 1
+    wrong2 = Math.floor(Math.random() * (continentLength-2)) + 1
     if (wrong2 % 2 != 0) {
         document.querySelector(`.button${wrongButtonPos[1]}Text`).textContent = continentName[wrong2]
     }
@@ -52,7 +52,7 @@ function randWrong2() {
     }
 }
 function randWrong3() {
-    wrong3 = Math.floor(Math.random() * 49) + 1
+    wrong3 = Math.floor(Math.random() * (continentLength-2)) + 1
     if (wrong3 % 2 != 0) {
         document.querySelector(`.button${wrongButtonPos[2]}Text`).textContent = continentName[wrong3]
     }
@@ -197,8 +197,46 @@ var north_America = [
     "dominica",
     "North America"
 ]
-
+var south_America = [
+    "https://flagicons.lipis.dev/flags/4x3/br.svg",
+    "brazil",
+    "https://flagicons.lipis.dev/flags/4x3/co.svg",
+    "colombia",
+    "https://flagicons.lipis.dev/flags/4x3/ar.svg",
+    "argentina",
+    "https://flagicons.lipis.dev/flags/4x3/pe.svg",
+    "peru",
+    "https://flagicons.lipis.dev/flags/4x3/cl.svg",
+    "chile",
+    "https://flagicons.lipis.dev/flags/4x3/ve.svg",
+    "venezuela",
+    "https://flagicons.lipis.dev/flags/4x3/ec.svg",
+    "ecuador",
+    "https://flagicons.lipis.dev/flags/4x3/bo.svg",
+    "bolivia",
+    "https://flagicons.lipis.dev/flags/4x3/gy.svg",
+    "guyana",
+    "https://flagicons.lipis.dev/flags/4x3/uy.svg",
+    "uruguay",
+    "https://flagicons.lipis.dev/flags/4x3/sr.svg",
+    "suriname",
+    "https://flagicons.lipis.dev/flags/4x3/py.svg",
+    "paraguay",
+    "https://flagicons.lipis.dev/flags/4x3/gf.svg",
+    "french guiana",
+    "https://flagicons.lipis.dev/flags/4x3/aw.svg",
+    "aruba",
+    "https://flagicons.lipis.dev/flags/4x3/cw.svg",
+    "Curaçao",
+    "https://flagicons.lipis.dev/flags/4x3/fk.svg",
+    "falkland islands",
+    "https://flagicons.lipis.dev/flags/4x3/tt.svg",
+    "trinidad",
+    "South America"
+]
 
 
 // :[> <]
-var continentName = north_America
+var continentName = eval(sessionStorage.getItem("continentName"));
+var continentLength = continentName.length
+console.log(continentName)

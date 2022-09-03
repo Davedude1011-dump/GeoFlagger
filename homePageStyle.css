@@ -75,6 +75,7 @@ body {
     margin-bottom: 5%;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+    opacity: 0.3;
 }
 .middleGameBox:hover {
     margin-bottom: 6%
@@ -88,6 +89,7 @@ body {
     margin: 1%;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+    opacity: 0.3;
 }
 .flagGlobal:hover {
     margin-bottom: 2%
