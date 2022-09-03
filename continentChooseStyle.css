@@ -71,10 +71,28 @@ body {
     color: rgb(80, 80, 80);
     border-radius: 10px;
     cursor: pointer;
+    transition: 1s;
+}
+.button:hover {
+    background-color: rgb(149, 149, 149);
+    color: rgb(255, 255, 255);
+    border: 5px solid white
 }
 .northAmerica {
     top: 1%;
 }
 .southAmerica {
     top: 16%;
+}
+.europe {
+    top: 31%;
+}
+.africa {
+    top: 46%;
+}
+.asia {
+    top: 61%;
+}
+.australasia {
+    top: 76%;
 }

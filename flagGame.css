@@ -171,6 +171,33 @@ body {
     font-family: Roboto;
 }
 
+.muteButton {
+    position: absolute;
+    height: 20%;
+    aspect-ratio: 1/1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1%;
+    border-radius: 50%;
+    border: rgba(0, 0, 0, 0.35) solid 2px;
+    cursor: pointer;
+    fill: black;
+    transition: 0.5s;
+}
+.muteButtonText {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: fit-content;
+    transform: translate(-50%, 50%);
+    font-size: 20px;
+    font-family: Roboto;
+    color: white;
+    font-weight: bold;
+}
+
 @media screen and (orientation: portrait) {
     .subTitle, .titleText {
         font-size: 20px;
