@@ -6,93 +6,16 @@
 }
 
 body {
-    background-color: aquamarine;
+    background-color: rgb(31,111,174);
 }
 
-.splineBG {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-}
-
-.CCtitleText {
-    position: relative;
-    width: 100%;
-    height: fit-content;
-    text-align: center;
-    font-size: 80px;
-    color: rgb(255, 251, 210);
-    font-weight: bold;
-    font-family: Roboto Condensed;
-}
-
-.CCsubTitleText {
-    position: relative;
-    top: 1%;
-    width: 100%;
-    height: fit-content;
-    text-align: center;
-    font-size: 30px;
-    color: rgb(255, 251, 210);
-    font-weight: bold;
-    font-family: Roboto Condensed;
-}
-
-.controlsText {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 1%;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-    font-size: 50px;
-    color: rgb(255, 251, 210);
-    font-weight: bold;
-    font-family: Silkscreen;
-}
-
-.button {
+.continentChooseBackground {
     position: absolute;
     left: 50%;
-    height: fit-content;
-    width: fit-content;
-    padding: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-    transform: translate(-50%);
-    background-color: white;
-    font-size: 35px;
-    font-weight: bold;
-    font-family: Roboto;
-    text-align: center;
-    color: rgb(80, 80, 80);
-    border-radius: 10px;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+.continent {
     cursor: pointer;
-    transition: 1s;
-}
-.button:hover {
-    background-color: rgb(149, 149, 149);
-    color: rgb(255, 255, 255);
-    border: 5px solid white
-}
-.northAmerica {
-    top: 1%;
-}
-.southAmerica {
-    top: 16%;
-}
-.europe {
-    top: 31%;
-}
-.africa {
-    top: 46%;
-}
-.asia {
-    top: 61%;
-}
-.australasia {
-    top: 76%;
 }

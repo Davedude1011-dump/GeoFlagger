@@ -9,22 +9,17 @@
         <title>Geo - Flagger</title>
     </head>
     <body>
-        <!--
-        <iframe src='https://my.spline.design/untitled-987bfebbc94173491fea9044cbe9d98a/' frameborder='0' class="splineBG"></iframe>
-        <div class="CCtitleText">Pick your Continent</div>
-        <div class="CCsubTitleText">( fly to it and wait )</div>
-        <div class="controlsText">
-            W<br>
-            A S D
-        </div>
-        -->
+        <img src="images\continentsChoose.jpg" alt="Try again later :(" class="continentChooseBackground" usemap="#map">
+
         <a href="continentLoading.html">
-            <div onclick="getContinent(this.id)" class="button northAmerica" id="north_America">North America</div>
-            <div onclick="getContinent(this.id)" class="button southAmerica" id="south_America">South America</div>
-            <div onclick="getContinent(this.id)" class="button europe" id="europe">Europe</div>
-            <div onclick="getContinent(this.id)" class="button africa" id="africa">Africa</div>
-            <div onclick="getContinent(this.id)" class="button asia" id="asia">Asia</div>
-            <div onclick="getContinent(this.id)" class="button australasia" id="australasia">Australasia</div>
+            <map name="map">
+                <area shape="poly" coords="31, 25, 411, 26, 211, 271, 31, 144" class="continent north-america" onclick="getContinent(this.id)" id="north_America">
+                <area shape="rect" coords="221, 270, 334, 453" class="continent south-america" onclick="getContinent(this.id)" id="south_America">
+                <area shape="poly" coords="400, 93, 572, 93, 572, 169, 524, 185, 501, 207, 469, 207, 443, 192, 410, 207, 401, 193"  class="continent europe" onclick="getContinent(this.id)" id="europe">
+                <area shape="poly" coords="384, 211, 384, 388, 542, 388, 542, 273, 523, 271, 508, 256, 495, 224, 460, 222, 442, 212"  class="continent africa" onclick="getContinent(this.id)" id="africa">
+                <area shape="poly" coords="584, 79, 584, 92, 575, 154, 581, 172, 505, 216, 505, 225, 530, 266, 596, 266, 595, 326, 869, 326, 869, 27"  class="continent asia" onclick="getContinent(this.id)" id="asia">
+                <area shape="rect" coords="688, 331, 856, 439"  class="continent australasia" onclick="getContinent(this.id)" id="australasia">
+            </map>
         </a>
     </body>
 </html>
