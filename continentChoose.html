@@ -12,6 +12,13 @@
         <img src="images\continentsChoose.jpg" alt="Try again later :(" class="continentChooseBackground" usemap="#map">
 
         <a href="continentLoading.html">
+            <button class="global-button" onclick="getContinent(this.id)" id="global">
+                <div class="global-icon"></div>
+                <div class="global-button-text">Global</div>
+            </button>
+        </a>
+
+        <a href="continentLoading.html">
             <map name="map">
                 <area shape="poly" coords="31, 25, 411, 26, 211, 271, 31, 144" class="continent north-america" onclick="getContinent(this.id)" id="north_America">
                 <area shape="rect" coords="221, 270, 334, 453" class="continent south-america" onclick="getContinent(this.id)" id="south_America">
