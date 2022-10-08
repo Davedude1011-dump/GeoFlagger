@@ -66,3 +66,14 @@ body {
     font-weight: bold;
     color: rgb(31,111,174)
 }
+
+.continent-name {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    translate: -50%;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(97,187,63);
+    font-family: Roboto Condensed;
+}

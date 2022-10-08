@@ -180,7 +180,7 @@ window.onload = function () {
 };
 
 
-var north_America = [
+var North_America = [
     "https://flagicons.lipis.dev/flags/4x3/us.svg",
     "united states",
     "https://flagicons.lipis.dev/flags/4x3/ca.svg",
@@ -233,7 +233,7 @@ var north_America = [
     "dominica",
     "North America"
 ]
-var south_America = [
+var South_America = [
     "https://flagicons.lipis.dev/flags/4x3/br.svg",
     "brazil",
     "https://flagicons.lipis.dev/flags/4x3/co.svg",
@@ -270,7 +270,7 @@ var south_America = [
     "trinidad",
     "South America"
 ]
-var europe = [
+var Europe = [
     "https://flagicons.lipis.dev/flags/4x3/de.svg",
     "germany",
     "https://flagicons.lipis.dev/flags/4x3/it.svg",
@@ -371,7 +371,7 @@ var europe = [
     "jersey",
     "Europe"
 ]
-var africa = [
+var Africa = [
     "https://flagicons.lipis.dev/flags/4x3/za.svg",
     "south africa",
     "https://flagicons.lipis.dev/flags/4x3/ng.svg",
@@ -474,7 +474,7 @@ var africa = [
     "seychelles",
     "Africa"
 ]
-var asia = [
+var Asia = [
     "https://flagicons.lipis.dev/flags/4x3/jp.svg",
     "japan",
     "https://flagicons.lipis.dev/flags/4x3/in.svg",
@@ -575,7 +575,7 @@ var asia = [
     "tajikistan",
     "Asia"
 ]
-var australasia = [
+var Australasia = [
     "https://flagicons.lipis.dev/flags/4x3/au.svg",
     "australia",
     "https://flagicons.lipis.dev/flags/4x3/fj.svg",
@@ -594,7 +594,7 @@ var australasia = [
     "tonga",
     "Astralasia"
 ]
-var global = [
+var Global = [
     "https://flagicons.lipis.dev/flags/4x3/us.svg",
     "united states",
     "https://flagicons.lipis.dev/flags/4x3/ca.svg",
